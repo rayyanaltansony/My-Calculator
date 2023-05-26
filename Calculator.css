@@ -1,0 +1,46 @@
+button {
+margin-top: 6;
+margin-left: 6; 
+cursor: pointer;
+background-color: rgb(51, 51, 51);
+color: white;
+font-family: Arial;
+font-size: 26px;
+font-weight: 400;
+margin-right: 5px;
+border-radius: 60px;
+height: 60px;
+width: 60px;
+}
+
+body {
+background-color: black;
+}
+
+.clear {
+font-size: 17px;
+}
+
+.otherbuttons {
+ background-color:  rgb(254, 160, 10);
+ color: white;
+}
+
+.result {
+color: white;
+font-family: Arial;
+font-weight: 400;
+font-size: 45px;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+.creator {
+ color: white;
+ font-family: Arial;
+ font-weight: 400;
+ font-size: 13px;
+ position: absolute;
+ bottom: 0;
+ left: 8;
+}

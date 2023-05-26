@@ -1,0 +1,96 @@
+<!DOCKTYPE html>
+<html>
+ 
+<head>
+<title>My Calculator</title>
+<link rel="stylesheet" href="Calculator.css">
+</head>
+ 
+<body>
+<p class="result"></p>
+ 
+ <p>
+<button onclick="
+updateCalculations('1');
+">1</button>
+
+<button  onclick="
+updateCalculations('2');
+">2</button>
+
+<button  onclick="
+updateCalculations('3');
+">3</button>
+
+<button class="otherbuttons" onclick="
+updateCalculations('+');
+">+</button>
+</p>
+ 
+<p>
+<button onclick="
+updateCalculations('4');
+">4</button>
+
+<button  onclick="
+updateCalculations('5');
+">5</button>
+
+<button  onclick="
+updateCalculations('6');
+">6</button>
+
+<button class="otherbuttons" onclick="
+updateCalculations('-');
+">-</button>
+</p>
+ 
+<p>
+<button onclick="
+updateCalculations('7');
+">7</button>
+
+<button  onclick="
+updateCalculations('8');
+">8</button>
+
+<button  onclick="
+updateCalculations('9');
+">9</button>
+
+<button class="otherbuttons" onclick="
+updateCalculations('*');
+">*</button>
+ </p>
+
+<p>
+<button onclick="
+updateCalculations('0');              
+">0</button>
+
+<button  onclick="
+updateCalculations('.');
+">.</button>
+
+<button  onclick="
+calculations = eval(calculations);
+document.querySelector('p').innerHTML = `${calculations}`;
+localStorage.setItem('calculations', calculations);                 
+">=</button>
+
+<button class="otherbuttons" onclick="
+updateCalculations('/');
+">/</button>
+</p>
+
+<button class="clear" onclick="
+calculations = '';
+document.querySelector('p').innerHTML = `${calculations}`;
+localStorage.setItem
+('calculations', calculations);
+">Clear</button>
+ <p class="creator">
+  Created by: Rayyan Altan.</p>
+<script src="Calculator.js"></script>
+</body>
+</html>
